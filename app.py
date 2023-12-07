@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # Function to load and preprocess data
-@st.cache
+@st.cache_data
 def load_data():
     global_temp_country = pd.read_csv("GlobalLandTemperaturesByCountry.csv")
     global_temp = pd.read_csv("GlobalTemperatures.csv")
