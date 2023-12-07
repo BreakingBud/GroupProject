@@ -5,8 +5,8 @@ import plotly.express as px
 # Function to load and preprocess data
 @st.cache
 def load_data():
-    global_temp_country = pd.read_csv("/mnt/data/GlobalLandTemperaturesByCountry.csv")
-    global_temp = pd.read_csv("/mnt/data/GlobalTemperatures.csv")
+    global_temp_country = pd.read_csv("GlobalLandTemperaturesByCountry.csv")
+    global_temp = pd.read_csv("GlobalTemperatures.csv")
 
     # Handling missing values and data conversion
     global_temp_country.dropna(subset=['AverageTemperature'], inplace=True)
